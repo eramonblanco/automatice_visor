@@ -34,22 +34,22 @@ public class CategoriaInsertarSteps {
 		driver.close();
 	}
 	
-    @Given("cargo la p·gina login del aplicativo Visor Web")
+    @Given("cargo la p√°gina login del aplicativo Visor Web")
 	public void cargarPaginaVisorWeb() {
         paginaLogin.cargar("http://localhost:8080/VisorWeb/index.xhtml");
     }
 
-    @And("inicio sesiÛn con el usuario {string} y la clave {string}")
+    @And("inicio sesi√≥n con el usuario {string} y la clave {string}")
     public void iniciarSesion(String usuario, String clave) {
         paginaLogin.iniciarSesion(usuario, clave);
     }
 
-    @When("ingreso a la pagina registrar categorÌa")
+    @When("ingreso a la pagina registrar categor√≠a")
     public void cargarPaginaRegistrarCategoria() throws InterruptedException {
         paginaRegistrarCategoria.cargar();
     }
 
-    @And("escribo la categorÌa {string} y hago clic en el botÛn guardar")
+    @And("escribo la categor√≠a {string} y hago clic en el bot√≥n guardar")
     public void registrarCategoria(String nombreCategoria) throws InterruptedException {
         paginaRegistrarCategoria.guardar(nombreCategoria);
     }
