@@ -39,17 +39,17 @@ public class CategoriaInsertarSteps {
         paginaLogin.cargar("http://localhost:8080/VisorWeb/index.xhtml");
     }
 
-    @And("inicio sesión con el usuario {string} y la clave {string}")
+    @And("inicio sesion con el usuario {string} y la clave {string}")
     public void iniciarSesion(String usuario, String clave) {
         paginaLogin.iniciarSesion(usuario, clave);
     }
 
-    @When("ingreso a la pagina registrar categoría")
+    @When("ingreso a la pagina registrar categoria")
     public void cargarPaginaRegistrarCategoria() throws InterruptedException {
         paginaRegistrarCategoria.cargar();
     }
 
-    @And("escribo la categoría {string} y hago clic en el botón guardar")
+    @And("escribo la categoria {string} y hago clic en el boton guardar")
     public void registrarCategoria(String nombreCategoria) throws InterruptedException {
         paginaRegistrarCategoria.guardar(nombreCategoria);
     }
