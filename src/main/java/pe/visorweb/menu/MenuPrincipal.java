@@ -12,7 +12,7 @@ public class MenuPrincipal {
 	@FindBy(xpath = "//div[@class=\"menu\"]/div[1]")
 	private WebElement menuHamburguesa;
 	
-	@FindBy(xpath = "//span[contains(text(), \"Mod. de Almacén\")]")
+	@FindBy(xpath = "//span[contains(text(), \"Mod. de Almacen\")]")
 	private WebElement menuModuloAlmacen;
 	
 	@FindBy(linkText = "Mnt. de Categoría")
