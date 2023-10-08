@@ -1,7 +1,7 @@
 Feature: Registrar Categoría
 
 	Scenario: Registrar Categoria Exitosa
-		Given cargo la página login del aplicativo Visor Web
+		Given cargo la pagina login del aplicativo Visor Web
 		  And inicio sesión con el usuario "admin" y la clave "clave"
 		 When ingreso a la pagina registrar categoría
 		  And escribo la categoría "MESA" y hago clic en el botón guardar

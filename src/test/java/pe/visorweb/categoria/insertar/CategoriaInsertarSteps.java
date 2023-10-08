@@ -34,7 +34,7 @@ public class CategoriaInsertarSteps {
 		driver.close();
 	}
 	
-    @Given("cargo la página login del aplicativo Visor Web")
+    @Given("cargo la pagina login del aplicativo Visor Web")
 	public void cargarPaginaVisorWeb() {
         paginaLogin.cargar("http://localhost:8080/VisorWeb/index.xhtml");
     }
