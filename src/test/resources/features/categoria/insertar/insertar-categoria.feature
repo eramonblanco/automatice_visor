@@ -5,7 +5,7 @@ Feature: Registrar Categoría
 		  And inicio sesion con el usuario "admin" y la clave "clave"
 		 When ingreso a la pagina registrar categoria
 		  And escribo la categoria "MESA" y hago clic en el boton guardar
-		 Then el aplicativo muestra el mensaje "Se guardo de manera correcta la Categoria"
+		 Then el aplicativo muestra el mensaje "Se guardo de manera correcta la Categoría"
 	
 	#Scenario: Registrar Categoria Vacía
 	#Given cargo la página login del aplicativo Visor Web
